@@ -1,117 +1,611 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>마포 셔츠룸 실장 견적 테이블 | 리얼 가격 공개</title>
-<meta name="description" content="마포 셔츠룸 실장 견적 테이블 공개. MZ 스타일의 솔직하고 트렌디한 리얼 견적 정보.">
-<meta name="keywords" content="마포 셔츠룸 견적 가격표">
-<meta property="og:title" content="마포 셔츠룸 실장 견적 테이블 | 리얼 가격 공개">
-<meta property="og:description" content="마포 셔츠룸 실장 견적 테이블 공개. MZ 스타일의 솔직하고 트렌디한 리얼 견적 정보.">
-<meta property="og:url" content="https://shirtsroom.shop/">
-<meta property="og:type" content="website">
-<link rel="canonical" href="https://shirtsroom.shop/">
-<style>
-:root{--primary:#c8a96e;--accent:#e8c87a;--bg:#0d0d12;--bg2:#13131a;--bg3:#1a1a24;--text:#e8e8f0;--muted:#8888a0;--border:#2a2a3a;--radius:12px}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-a{color:var(--primary);text-decoration:none}a:hover{color:var(--accent)}
-header{position:sticky;top:0;z-index:100;background:rgba(13,13,18,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 5%}
-.hi{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1200px;margin:0 auto}
-.logo{font-size:1.2rem;font-weight:800;color:var(--accent)}
-.logo small{color:var(--muted);font-weight:400;font-size:.8rem;margin-left:6px}
-nav a{font-size:.88rem;color:var(--muted);margin-left:24px;transition:.2s}
-nav a:hover{color:var(--accent)}
-.hcta{background:var(--primary);color:#000;padding:8px 16px;border-radius:6px;font-weight:700;font-size:.88rem}
-.hcta:hover{background:var(--accent);color:#000}
-.hero{min-height:85vh;display:flex;align-items:center;padding:80px 5%;background:linear-gradient(135deg,#0d0d12,#1a1220,#0d0d12);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(200,169,110,.12),transparent 70%)}
-.hc{max-width:700px;position:relative;z-index:1}
-.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(200,169,110,.15);border:1px solid rgba(200,169,110,.3);border-radius:50px;padding:5px 14px;font-size:.8rem;color:var(--primary);margin-bottom:24px}
-.hc h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;line-height:1.15;letter-spacing:-1px;margin-bottom:18px}
-.hc h1 em{color:var(--accent);font-style:normal}
-.hsub{font-size:1rem;color:var(--muted);margin-bottom:32px;line-height:1.8}
-.acts{display:flex;flex-wrap:wrap;gap:12px}
-.btn{background:linear-gradient(135deg,var(--primary),var(--accent));color:#000;padding:14px 28px;border-radius:8px;font-weight:800;font-size:.95rem;transition:.3s;display:inline-block}
-.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,169,110,.4);color:#000}
-.btn2{border:1.5px solid var(--border);color:var(--text);padding:14px 24px;border-radius:8px;font-weight:600;font-size:.95rem;transition:.3s}
-.btn2:hover{border-color:var(--primary);color:var(--primary)}
-.phone{font-size:1.8rem;font-weight:900;color:var(--accent);margin-top:28px;letter-spacing:1px}
-.phone small{display:block;font-size:.82rem;color:var(--muted);font-weight:400}
-.stats{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:22px 5%}
-.sg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
-.sn{font-size:1.6rem;font-weight:900;color:var(--accent)}
-.sl{font-size:.8rem;color:var(--muted);margin-top:2px}
-section{padding:72px 5%}
-.si{max-width:1200px;margin:0 auto}
-.sh{text-align:center;margin-bottom:48px}
-.stag{display:inline-block;background:rgba(200,169,110,.1);color:var(--primary);font-size:.76rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:1px;margin-bottom:12px}
-.sh h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;letter-spacing:-.5px}
-.sh p{color:var(--muted);margin-top:10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px;transition:.3s;position:relative;overflow:hidden}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--accent))}
-.card:hover{border-color:var(--primary);transform:translateY(-3px)}
-.ci{font-size:1.8rem;margin-bottom:14px}
-.card h3{font-size:1.05rem;font-weight:800;margin-bottom:8px}
-.card p{font-size:.88rem;color:var(--muted);line-height:1.7}
-.ptable{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden}
-.ptable th{background:linear-gradient(135deg,#1e1a10,#2a2010);color:var(--accent);padding:14px 18px;text-align:left;font-size:.88rem;font-weight:700;border-bottom:2px solid var(--primary)}
-.ptable td{padding:14px 18px;border-bottom:1px solid var(--border);font-size:.92rem}
-.ptable tr:hover td{background:rgba(200,169,110,.05)}
-.ptable tr:last-child td{border-bottom:none}
-.pbadge{background:rgba(200,169,110,.15);color:var(--primary);padding:2px 8px;border-radius:4px;font-size:.76rem;font-weight:700}
-.pvip{color:var(--accent);font-weight:800}
-.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-.rv{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
-.rstars{color:var(--accent);margin-bottom:8px;letter-spacing:2px}
-.rtxt{font-size:.9rem;color:var(--muted);line-height:1.8;margin-bottom:12px}
-.rauth{font-size:.8rem;color:var(--muted)}
-.rauth strong{color:var(--text)}
-.ctasec{background:linear-gradient(135deg,#1a1410,#0d0d12);text-align:center;padding:72px 5%}
-.ctasec h2{font-size:1.8rem;font-weight:900;margin-bottom:14px}
-.ctaph{font-size:2.4rem;font-weight:900;color:var(--accent);margin:20px 0;letter-spacing:2px}
-.ctanote{color:var(--muted);font-size:.88rem;margin-bottom:28px}
-footer{background:var(--bg2);border-top:1px solid var(--border);padding:36px 5% 24px}
-.fi{max-width:1200px;margin:0 auto}
-.ft{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;margin-bottom:28px}
-.fb h3{font-size:1rem;font-weight:800;color:var(--accent);margin-bottom:8px}
-.fb p{font-size:.83rem;color:var(--muted);line-height:1.7}
-.fc h4{font-size:.88rem;font-weight:700;margin-bottom:10px}
-.fc ul{list-style:none}
-.fc li{margin-bottom:6px}
-.fc a{font-size:.83rem;color:var(--muted)}
-.fc a:hover{color:var(--primary)}
-.fbot{border-top:1px solid var(--border);padding-top:18px;text-align:center;font-size:.78rem;color:var(--muted)}
-@media(max-width:768px){nav{display:none}.sg{grid-template-columns:repeat(2,1fr)}.ft{grid-template-columns:1fr}.phone{font-size:1.4rem}}
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","name":"마포 셔츠룸 실장 견적 테이블 | 리얼 가격 공개","description":"마포 셔츠룸 실장 견적 테이블 공개. MZ 스타일의 솔직하고 트렌디한 리얼 견적 정보.","url":"https://shirtsroom.shop","telephone":"010-6279-0862","address":{"@type":"PostalAddress","addressLocality":"마포구","addressRegion":"서울특별시","addressCountry":"KR"},"openingHours":"Mo-Su 18:00-06:00","priceRange":"₩₩₩"},{"@type":"WebSite","name":"마포 셔츠룸 실장 견적 테이블 | 리얼 가격 공개","url":"https://shirtsroom.shop"}]}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="010-6279-0862 공덕, 연남동, 서교동 인근에 위치하며, 마포 셔츠룸 대표 실장의 정직한 견적 가이드. 럭셔리 에디토리얼 매거진 스타일의 가격 테이블 및 바가지 없는 정찰제 원칙, 한대표 010-6279-0862 정밀 예약 안내.">
+  <meta name="keywords" content="마포 셔츠룸, 마포 셔츠룸 가격, 마포 셔츠룸 견적, 홍대 셔츠룸 가격, 정찰제 셔츠룸, 한대표 예약">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shirtsroom.shop">
+  <title>마포셔츠룸 [010 6279 0862] 공덕셔츠룸 연남동셔츠룸 방문상담</title>
+
+  <!-- Typography: Playfair Display & Noto Serif KR for Premium Classic Luxury Aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --lux-bg: #FCFBF9; /* Warm Ivory Sand */
+      --lux-primary: #1C1A17; /* Charcoal Sepia */
+      --lux-gold: #C5A880; /* Muted Champagne Gold */
+      --lux-accent: #8E2B2B; /* Deep Crimson */
+      --lux-border: rgba(28, 26, 23, 0.1);
+      --font-serif: 'Playfair Display', 'Noto Serif KR', Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--lux-bg);
+      color: var(--lux-primary);
+      font-family: var(--font-serif);
+      line-height: 1.65;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Editorial Layout Grid */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    header {
+      border-bottom: 1px solid var(--lux-border);
+      padding: 2.5rem 0;
+    }
+
+    .brand-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .brand-category {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--lux-gold);
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .brand-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+
+    .brand-tagline {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #777777;
+      margin-top: 0.5rem;
+    }
+
+    /* Grid Magazine Layout */
+    .magazine-grid {
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+      gap: 4rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 968px) {
+      .magazine-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    /* Main Editorial Article */
+    .article-meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--lux-gold);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .article-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      word-break: keep-all;
+    }
+
+    .article-intro {
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: #555555;
+      margin-bottom: 2.5rem;
+      border-left: 2px solid var(--lux-gold);
+      padding-left: 1.5rem;
+    }
+
+    .article-body p {
+      font-size: 1.05rem;
+      margin-bottom: 1.8rem;
+      color: #2C2A29;
+      text-align: justify;
+      word-break: keep-all;
+    }
+
+    .article-body h3 {
+      font-size: 1.6rem;
+      margin: 3rem 0 1.5rem 0;
+      border-bottom: 1px solid var(--lux-border);
+      padding-bottom: 0.5rem;
+    }
+
+    /* Editorial Pricing Table (Luxury Card Format) */
+    .lux-table-wrapper {
+      margin: 3rem 0;
+      background-color: #FAF8F5;
+      border: 1px solid var(--lux-border);
+      padding: 3rem 2rem;
+    }
+
+    .lux-table-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .lux-table-header h3 {
+      margin: 0 !important;
+      border: none !important;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .lux-table-header p {
+      font-size: 0.85rem;
+      color: #777;
+      font-style: italic;
+    }
+
+    .lux-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px dashed var(--lux-border);
+      padding: 1.2rem 0;
+    }
+
+    .lux-item:last-child {
+      border-bottom: none;
+    }
+
+    .lux-item-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .lux-item-dots {
+      flex-grow: 1;
+      border-bottom: 1px dotted var(--lux-border);
+      margin: 0 1rem;
+    }
+
+    .lux-item-price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--lux-accent);
+    }
+
+    .lux-item-desc {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.25rem;
+      font-style: italic;
+    }
+
+    /* Sidebar Content */
+    .sidebar {
+      position: sticky;
+      top: 2rem;
+    }
+
+    .sidebar-widget {
+      border: 1px solid var(--lux-border);
+      padding: 2.5rem 1.8rem;
+      background: #FFFFFF;
+      margin-bottom: 2.5rem;
+    }
+
+    .sidebar-widget h4 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-bottom: 2px solid var(--lux-primary);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .chief-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--lux-gold);
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .contact-btn {
+      display: block;
+      width: 100%;
+      background: var(--lux-primary);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 1rem 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-top: 1.5rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: var(--lux-gold);
+    }
+
+    /* Interaction Form */
+    .lux-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .lux-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .lux-form-group label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+
+    .lux-form-group input, .lux-form-group select, .lux-form-group textarea {
+      background: var(--lux-bg);
+      border: 1px solid var(--lux-border);
+      padding: 0.8rem;
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .lux-form-group input:focus, .lux-form-group select:focus {
+      border-color: var(--lux-gold);
+    }
+
+    .lux-submit {
+      background: var(--lux-primary);
+      color: #FFFFFF;
+      border: none;
+      padding: 1rem;
+      font-family: var(--font-serif);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      transition: background-color 0.2s ease;
+    }
+
+    .lux-submit:hover {
+      background-color: var(--lux-gold);
+    }
+
+    /* Customer Interview Testimonials */
+    .interview-block {
+      border-left: 3px solid var(--lux-gold);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .interview-q {
+      font-weight: 700;
+      font-style: italic;
+      color: var(--lux-accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .interview-a {
+      font-size: 0.95rem;
+      color: #555555;
+    }
+
+    footer {
+      background: var(--lux-primary);
+      color: #E2DFDA;
+      padding: 5rem 0 3rem 0;
+      margin-top: 6rem;
+      border-top: 1px solid var(--lux-border);
+      font-size: 0.85rem;
+    }
+
+    .footer-columns {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+    }
+
+    .footer-columns h5 {
+      color: var(--lux-gold);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-columns ul {
+      list-style: none;
+    }
+
+    .footer-columns ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-columns a {
+      color: #AAAAAA;
+      text-decoration: none;
+    }
+
+    .footer-columns a:hover {
+      color: #FFFFFF;
+    }
+
+    /* Fixed Premium Booking Float */
+    .lux-float-cta {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 1000;
+      background: var(--lux-primary);
+      color: #FFFFFF;
+      border: 1px solid var(--lux-gold);
+      padding: 1.2rem 2rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .lux-float-cta:hover {
+      background-color: var(--lux-gold);
+      transform: translateY(-4px);
+    }
+  </style>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "마포 셔츠룸 대표 실장 견적 테이블 및 바가지 요금 대처법",
+    "description": "마포 홍대 셔츠룸의 올바른 요금 및 바가지 예방을 위한 심층 기사. 대표 실장 한대표의 투명한 정찰제 견적 테이블 포함.",
+    "author": {
+      "@type": "Person",
+      "name": "한대표"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Shirtsroom Shop",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shirtsroom.shop/logo.png"
+      }
+    },
+    "datePublished": "2026-05-29",
+    "mainEntityOfPage": "https://shirtsroom.shop"
+  }
+  </script>
+  <meta name="telephone" content="010-6279-0862">
 </head>
 <body>
-<header><div class="hi"><div class="logo">마포 셔츠룸<small>마포 셔츠룸 견적 가격표</small></div><nav><a href="guide.html">이용안내</a><a href="price.html">가격안내</a><a href="review.html">후기</a><a href="booking.html">예약</a></nav><a href="tel:01062790862" class="hcta">☎ 바로전화</a></div></header>
-<main>
-<section class="hero"><div class="hc"><div class="badge">⭐ 마포 셔츠룸 검증 가이드</div><h1>마포 셔츠룸 <em>실장 견적</em><br>리얼 가격 테이블</h1><p class="hsub">숨겨진 가격은 없습니다. 마포 주요 셔츠룸 실장 견적을 있는 그대로 공개합니다. 트렌디하고 솔직한 가격 정보.</p><div class="acts"><a href="tel:01062790862" class="btn">📞 즉시 예약 상담</a><a href="guide.html" class="btn2">이용 가이드 보기</a></div><div class="phone">010-6279-0862<small>24시간 상담 · 카카오톡 OK</small></div></div></section>
-<div class="stats"><div class="sg"><div><div class="sn">150+</div><div class="sl">검증 업소</div></div><div><div class="sn">10년+</div><div class="sl">업계 경력</div></div><div><div class="sn">4.9★</div><div class="sl">평균 만족도</div></div><div><div class="sn">24h</div><div class="sl">상담 운영</div></div></div></div>
-<section><div class="si"><div class="sh"><div class="stag">SERVICES</div><h2>마포 셔츠룸 핵심 서비스</h2><p>목적에 맞는 최적의 업소를 연결해드립니다.</p></div><div class="grid">
-<div class="card"><div class="ci">🍾</div><h3>프리미엄 VIP 코스</h3><p>마포 최고급 셔츠룸 VIP 코스. 프라이빗 공간과 최상의 서비스. 비즈니스 접대에 최적화된 프리미엄 환경.</p></div>
-<div class="card"><div class="ci">💼</div><h3>비즈니스 단체 패키지</h3><p>기업 회식·팀 빌딩·비즈니스 접대를 위한 단체 패키지. 5인~50인 맞춤 견적. 사전 예약 시 추가 혜택.</p></div>
-<div class="card"><div class="ci">📊</div><h3>투명 가격 비교</h3><p>마포 지역 업소별 실제 가격을 투명하게 비교. 바가지 없는 정찰제 정보로 현명한 선택을 도와드립니다.</p></div>
-<div class="card"><div class="ci">⚡</div><h3>당일 즉시 예약</h3><p>전화 한 통으로 당일 즉시 예약. 피크타임 사전 예약 시 우선 배정. 24시간 실시간 상담 운영.</p></div>
-</div></div></section>
-<section style="background:var(--bg2)"><div class="si"><div class="sh"><div class="stag">PRICE</div><h2>마포 셔츠룸 코스별 가격</h2><p>2025년 최신 기준. 업소·시즌에 따라 변동될 수 있습니다.</p></div>
-<table class="ptable"><thead><tr><th>코스</th><th>구성</th><th>인원</th><th>가격대</th><th>추천</th></tr></thead><tbody>
-<tr><td><span class="pbadge">A코스</span></td><td>기본 서비스 + 주류 기본</td><td>2~4인</td><td>₩150,000~</td><td>가볍게 즐기는 모임</td></tr>
-<tr><td><span class="pbadge">B코스</span></td><td>풀 서비스 + 프리미엄 주류</td><td>2~6인</td><td>₩200,000~</td><td>비즈니스 접대</td></tr>
-<tr><td><span class="pbadge">C코스</span></td><td>스페셜 서비스 + 고급 주류</td><td>4~8인</td><td>₩250,000~</td><td>중요 거래처</td></tr>
-<tr><td><span class="pvip">🌟 VIP</span></td><td>프리미엄 전 서비스 + 양주 풀세팅</td><td>2~4인 (프라이빗)</td><td>₩300,000~</td><td>최고급 프라이빗</td></tr>
-<tr><td>단체 10인+</td><td>맞춤 패키지</td><td>10인 이상</td><td>별도 문의</td><td>대규모 회식</td></tr>
-</tbody></table></div></section>
-<section><div class="si"><div class="sh"><div class="stag">REVIEWS</div><h2>실제 이용 후기</h2><p>직접 다녀온 분들의 솔직한 리얼 후기입니다.</p></div><div class="reviews">
-<div class="rv"><div class="rstars">★★★★★</div><p class="rtxt">"거래처 접대로 VIP 코스 이용했는데 정말 만족. 서비스 수준이 달랐음. 다음에도 여기 통해서 예약합니다."</p><div class="rauth"><strong>사업가 P씨</strong> · VIP 코스 방문</div></div>
-<div class="rv"><div class="rstars">★★★★★</div><p class="rtxt">"마포 셔츠룸 여러 군데 다녀봤는데 여기서 소개해준 곳이 가장 깔끔하고 가성비 좋았어요."</p><div class="rauth"><strong>직장인 K씨</strong> · B코스 방문</div></div>
-<div class="rv"><div class="rstars">★★★★☆</div><p class="rtxt">"당일 즉시 예약 가능하다는 게 진짜 편했음. 급하게 접대 자리 잡아야 했는데 30분만에 해결."</p><div class="rauth"><strong>팀장 L씨</strong> · 당일 예약</div></div>
-</div></div></section>
-<section class="ctasec"><div class="si"><h2>지금 바로 예약 상담 받으세요</h2><p class="ctanote">24시간 운영 · 당일 즉시 예약 · 카카오톡 OK</p><div class="ctaph">010-6279-0862</div><a href="tel:01062790862" class="btn" style="font-size:1.05rem;padding:16px 36px">📞 지금 전화하기</a></div></section>
-</main>
-<footer><div class="fi"><div class="ft"><div class="fb"><h3>마포 셔츠룸 실장 견적 테이블 | 리얼 가격 공개</h3><p>마포 지역 검증 셔츠룸 종합 정보 플랫폼. 10년 경력 업계 전문가가 직접 선별한 정보만 제공합니다.</p></div><div class="fc"><h4>바로가기</h4><ul><li><a href="guide.html">이용 가이드</a></li><li><a href="price.html">가격 안내</a></li><li><a href="review.html">이용 후기</a></li><li><a href="booking.html">예약하기</a></li></ul></div><div class="fc"><h4>연락처</h4><ul><li>📞 010-6279-0862</li><li>⏰ 18:00~익일 06:00</li><li>📍 마포 일대</li></ul></div></div><div class="fbot"><p>© 2025 마포 셔츠룸 실장 견적 테이블 | 리얼 가격 공개. 만 19세 미만 이용 불가.</p></div></div></footer>
-</body></html>
+
+  <header>
+    <div class="container brand-header">
+      <span class="brand-category">THE HONEST REPORT</span>
+      <div class="brand-title">Shirts Archive</div>
+      <p class="brand-tagline">마포 셔츠룸 투명 정찰제 실장 연대기</p>
+    </div>
+  </header>
+
+  <main class="container magazine-grid">
+    
+    <!-- Left Main Column (Article & Table) -->
+    <section>
+      <div class="article-meta">EXCLUSIVE ESSAY — VOL. 12</div>
+      <h1 class="article-title">바가지와 기만 너머,<br><span style="color: var(--lux-accent);">정직함이 최고의 럭셔리다</span></h1>
+      
+      <div class="article-intro">
+        밤이 깊어질수록 불투명한 요금표와 호객 행위는 기승을 부립니다. 하지만 최고의 고객 대접은 오직 정직한 가격 공시와 타협 없는 고품질 인프라에서 시작됩니다. 마포 홍대 밤문화를 이끄는 한대표가 1티어 셔츠룸의 실장 견적과 정찰제 테이블을 투명하게 고발하며 새로운 기준을 정립합니다.
+      </div>
+
+      <div class="article-body">
+        <p>
+          수많은 유흥 커뮤니티와 인터넷 광고판을 도배한 저가 미끼 견적은 소비자들을 끊임없이 기만해 왔습니다. "1인 입장 가능, 최저가 보장"이라 적힌 문구를 보고 방문했지만 계산서에 찍히는 각종 추가 요금, 웨이터 팁, 봉사료(R/T)의 횡포는 소비자를 분노케 하기에 충분했습니다.
+        </p>
+
+        <p>
+          이에 마포/합정 셔츠룸 대표 실장인 한대표는 불투명한 회색지대의 요금 체계를 전면 개조하여 추가 비용이 단 1원도 발생하지 않는 완전 정찰제 견적 테이블을 공개하기에 이르렀습니다. 정직한 영업만이 1티어 하이브리드 업소의 품격과 지속성을 유지하는 유일한 길이기 때문입니다.
+        </p>
+
+        <h3>한대표 배정 셔츠룸 정찰제 견적 테이블</h3>
+        <p>
+          아래의 요금표는 주류, 안주, 웨이터 팁 및 실장 책임 부킹 조율 비용이 완전히 통합되어 설계된 단일가 가격표입니다.
+        </p>
+
+        <div class="lux-table-wrapper">
+          <div class="lux-table-header">
+            <h3>PRICING DIRECTORY</h3>
+            <p>모든 추가 요금 0% 보증 정찰 패키지</p>
+          </div>
+          
+          <div>
+            <div class="lux-item">
+              <div>
+                <span class="lux-item-name">Premium Solo Package</span>
+                <div class="lux-item-desc">1인 전용 컴팩트 룸 부킹, 위스키 or 기본 골든 서브 주류 세트 포함.</div>
+              </div>
+              <div class="lux-item-dots"></div>
+              <div class="lux-item-price">130,000₩</div>
+            </div>
+
+            <div class="lux-item">
+              <div>
+                <span class="lux-item-name">Elite Duo Suite</span>
+                <div class="lux-item-desc">2~3인용 비즈니스 룸 배정, 엄선된 사이드 디시 및 프리미엄 소모품 무상 케어.</div>
+              </div>
+              <div class="lux-item-dots"></div>
+              <div class="lux-item-price">150,000₩ <span style="font-size:0.8rem; color:#888;">/1인당</span></div>
+            </div>
+
+            <div class="lux-item">
+              <div>
+                <span class="lux-item-name">Grande Social Room</span>
+                <div class="lux-item-desc">4인 이상 단체 대형 룸 완비, 스피커 음향 밸런스 조정 및 최고급 과일 플래터 추가 제공.</div>
+              </div>
+              <div class="lux-item-dots"></div>
+              <div class="lux-item-price">160,000₩ <span style="font-size:0.8rem; color:#888;">/1인당</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h3>눈탱이(바가지요금) 완벽 방지 가이드</h3>
+        <p>
+          어떤 업소를 방문하든 아래의 세 가지 사항을 반드시 유선 상으로 미리 확답 받으셔야 안전합니다.
+        </p>
+        
+        <div class="interview-block">
+          <div class="interview-q">질문 1. 유선상 안내된 요금에 부가세와 봉사료(R/T)가 모두 포함되어 있습니까?</div>
+          <div class="interview-a">현장에서 카드 결제 시 10% 추가 혹은 봉사료 별도를 요구하는 경우가 대다수입니다. 반드시 '완전 종결 요금'임을 사전에 한대표와 같은 책임 실장에게 보증받아야 합니다.</div>
+        </div>
+
+        <div class="interview-block">
+          <div class="interview-q">질문 2. 기본 주류 세트 이외에 추가 음료나 생수를 요청할 때 비용이 부과됩니까?</div>
+          <div class="interview-a">음료수 하나당 터무니없는 가격을 부과하는 악덕 업소가 존재합니다. 정직한 1티어 셔츠룸은 기본 음료와 얼음, 소모품을 전면 무상으로 지원합니다.</div>
+        </div>
+
+        <p>
+          신뢰할 수 있는 매칭과 고풍스러운 휴식을 원하신다면 검증된 마포 셔츠룸 한대표(010-6279-0862)에게 유선 상담을 요청해 보십시오. 격조 높은 비즈니스의 첫 페이지를 열어 드립니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Right Sidebar Column -->
+    <aside class="sidebar">
+      
+      <!-- Profile Widget -->
+      <div class="sidebar-widget">
+        <div class="chief-avatar">韓</div>
+        <h4 style="text-align: center;">Representative Han</h4>
+        <p style="font-size: 0.85rem; color: #555555; text-align: center; font-style: italic; margin-bottom: 1.5rem;">
+          "정직과 신의는 가장 비싸고 럭셔리한 자산입니다. 한 번의 마주함에도 격을 담겠습니다."
+        </p>
+        <div style="border-top: 1px solid var(--lux-border); padding-top: 1rem; font-size: 0.85rem; color: #333;">
+          <p>• 마포/합정 셔츠룸 연간 고객 만족 1위</p>
+          <p>• 100% 안심 제휴 영수증 발급 가능</p>
+          <p>• 철저한 단체 매치메이킹 전문</p>
+        </div>
+        <a href="tel:010-6279-0862" class="contact-btn">010-6279-0862 직통 유선 예약</a>
+      </div>
+
+      <!-- Quick Reservation Form -->
+      <div class="sidebar-widget">
+        <h4>Request a Quote</h4>
+        <p style="font-size: 0.8rem; color: #666; margin-bottom: 1rem;">견적 조회 및 룸 실시간 매칭 접수</p>
+        
+        <form class="lux-form" onsubmit="alert('견적 및 매칭 상담이 접수되었습니다. 한대표가 즉시 회신해 드리겠습니다.'); return false;">
+          <div class="lux-form-group">
+            <label for="reg-name">성함</label>
+            <input type="text" id="reg-name" required placeholder="귀하의 성함">
+          </div>
+          <div class="lux-form-group">
+            <label for="reg-phone">연락처</label>
+            <input type="tel" id="reg-phone" required placeholder="010-XXXX-XXXX">
+          </div>
+          <div class="lux-form-group">
+            <label for="reg-plan">방문 옵션</label>
+            <select id="reg-plan">
+              <option value="solo">Premium Solo (13만)</option>
+              <option value="duo">Elite Duo (15만)</option>
+              <option value="grande">Grande Social (16만)</option>
+            </select>
+          </div>
+          <button type="submit" class="lux-submit">상담 배정 요청</button>
+        </form>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container footer-columns">
+      <div>
+        <div class="footer-logo">SHIRTSROOM.SHOP</div>
+        <p style="color: #888888; font-size: 0.8rem;">
+          우리는 무분별한 유흥 광고 시장의 허위 정보를 몰아내고, 럭셔리 매거진 에디토리얼 감성의 투명한 리포트를 매달 발행합니다. 스위스 미니멀 스펙 및 국내 법률 가이드를 철저히 따릅니다.
+        </p>
+      </div>
+      <div>
+        <h5>Reservation Desk</h5>
+        <ul>
+          <li>대표 책임실장: 한대표</li>
+          <li>핫라인: 010-6279-0862</li>
+          <li>위치: 서울시 마포구 합정동 인근 1티어 지점</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal & Rules</h5>
+        <ul>
+          <li>• 미성년자 출입 차단 원칙</li>
+          <li>• 100% 투명 정찰제</li>
+          <li>• 허위 광고 차단 신고제</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; color: #666666; font-size: 0.75rem;">
+      © 2026 EDITORIAL SHIRTS ARCHIVE. COOPERATED WITH BPaaS CLOSER AGENTS. ALL RIGHTS RESERVED.
+    </div>
+  </footer>
+
+  <!-- Fixed Luxury Call Float Button -->
+  <a href="tel:010-6279-0862" class="lux-float-cta">
+    한대표 견적 문의 (010-6279-0862)
+  </a>
+
+</body>
+</html>
